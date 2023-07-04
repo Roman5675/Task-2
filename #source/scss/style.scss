@@ -88,6 +88,7 @@ img{
     justify-content: space-between;
     @media (max-width: 585px) {
         flex-wrap: wrap;
+        justify-content: center;
     }
     @media (max-width: 585px) {
         .testing__text {
