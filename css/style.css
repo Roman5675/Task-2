@@ -112,12 +112,6 @@ img {
           flex-direction: column;
 }
 
-.container {
-  position: relative;
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
 .testing__background {
   background: radial-gradient(191.25% 90.42% at 0% 58.21%, rgba(199, 185, 240, 0.6) 0%, rgba(199, 200, 208, 0) 100%), radial-gradient(196.86% 84.45% at 100% 62.23%, rgba(199, 185, 240, 0.6) 0%, rgba(199, 200, 208, 0) 100%), #FFF;
 }
@@ -278,6 +272,15 @@ img {
   display: flex;
   gap: 8px;
   color: #D8EFE3;
+}
+@media (max-width: 585px) {
+  .testing__learn-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .testing__learn-text::after {

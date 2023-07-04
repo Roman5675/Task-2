@@ -31,15 +31,6 @@ img{
     
 }
 
-.container {
-    position: relative;
-    max-width: 1366px;
-    margin: 0 auto;
-    
-}
-
-
-
 //testing start
 
 .testing__background {
@@ -149,6 +140,10 @@ img{
     display: flex;
     gap: 8px;
     color: #D8EFE3;
+    @media (max-width: 585px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .testing__learn-text::after {
