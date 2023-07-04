@@ -245,6 +245,13 @@ img {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 585px) {
+  .testing__par-learn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .testing__learn {
   height: 28px;
@@ -260,6 +267,7 @@ img {
   background: #23CC4B;
   border-radius: 10px;
   width: 137px;
+  color: #D8EFE3;
 }
 
 .testing__learn-bg-purple {
@@ -271,16 +279,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  color: #D8EFE3;
-}
-@media (max-width: 585px) {
-  .testing__learn-text {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .testing__learn-text::after {
@@ -288,7 +286,7 @@ img {
 }
 
 @media (max-width: 585px) {
-  .testing__text-black p {
+  .testing__text-black .testing__text-white {
     color: #221E29;
   }
   .testing__text-black h2 {

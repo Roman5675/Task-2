@@ -121,6 +121,9 @@ img{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 585px) {
+        align-items: center;
+    }
 }
 
 .testing__learn {
@@ -131,6 +134,7 @@ img{
     background: #23CC4B;
     border-radius: 10px;
     width: 137px;
+    color: #D8EFE3;
 }
 
 .testing__learn-bg-purple {
@@ -139,11 +143,7 @@ img{
 .testing__learn-text {
     display: flex;
     gap: 8px;
-    color: #D8EFE3;
-    @media (max-width: 585px) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    
 }
 
 .testing__learn-text::after {
@@ -152,7 +152,7 @@ img{
 
 @media (max-width: 585px) {
     .testing__text-black {
-        p {
+        .testing__text-white {
             color: #221E29;
         }
         h2 {
