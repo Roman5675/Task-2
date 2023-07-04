@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 400;
+  color: #221E29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.testing__background {
+  background: radial-gradient(191.25% 90.42% at 0% 58.21%, rgba(199, 185, 240, 0.6) 0%, rgba(199, 200, 208, 0) 100%), radial-gradient(196.86% 84.45% at 100% 62.23%, rgba(199, 185, 240, 0.6) 0%, rgba(199, 200, 208, 0) 100%), #FFF;
+}
+
+.testing__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+  background-image: url(../img/testing-5.png), url(../img/testing-6.png);
+  background-repeat: no-repeat;
+  background-position: right 106px, left 478px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+@media (max-width: 1366px) {
+  .testing__column {
+    background-position: right 106px, left calc(560px + -82 * (100vw - 900px) / 466);
+  }
+}
+@media (max-width: 899px) {
+  .testing__column {
+    padding-top: calc(60px + 60 * (100vw - 320px) / 580);
+    padding-bottom: calc(60px + 60 * (100vw - 320px) / 580);
+    padding-left: calc(32px + 64 * (100vw - 320px) / 580);
+    padding-right: calc(32px + 64 * (100vw - 320px) / 580);
+    background-size: 100%;
+  }
+}
+@media (max-width: 899px) {
+  .testing__column {
+    background-position: right calc(210px + -316 * (100vw - 708px) / 658), left calc(510px + 50 * (100vw - 708px) / 658);
+  }
+}
+@media (max-width: 707px) {
+  .testing__column {
+    background-position: right calc(240px + -30 * (100vw - 586px) / 780), left calc(510px + 0 * (100vw - 586px) / 780);
+  }
+}
+@media (max-width: 585px) {
+  .testing__column {
+    background-position: right calc(390px + -150 * (100vw - 500px) / 866), left 840px;
+  }
+}
+@media (max-width: 500px) {
+  .testing__column {
+    background-image: url(../img/testing-6.png), url(../img/testing-5.png), url(../img/testing-6.png), url(../img/testing-5.png);
+    background-position: left -53px, right calc(400px + -294 * (100vw - 320px) / 1046), left calc(820px + 20 * (100vw - 320px) / 1046), right 1350px;
+  }
+}
+
+.testing__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 585px) {
+  .testing__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 585px) {
+  .testing__row .testing__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.testing__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 271px;
+          flex: 1 0 271px;
+  max-width: 547px;
+}
+@media (max-width: 834px) {
+  .testing__text {
+    max-width: 427px;
+  }
+}
+.testing__text h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 16px 0px;
+}
+
+.testing__text-left {
+  margin-right: 10px;
+}
+
+.testing__text-right {
+  margin-left: 10px;
+}
+
+.testing__text-white {
+  color: #D8EFE3;
+}
+
+.testing__par-learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.testing__learn {
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #23CC4B;
+  border-radius: 10px;
+  width: 137px;
+}
+
+.testing__learn-bg-purple {
+  background: #9E65C6;
+}
+
+.testing__learn-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  color: #D8EFE3;
+}
+
+.testing__learn-text::after {
+  content: url("../img/svg/testing-7.svg");
+}
+
+@media (max-width: 585px) {
+  .testing__text-black p {
+    color: #221E29;
+  }
+  .testing__text-black h2 {
+    color: #221E29;
+  }
+}
