@@ -125,47 +125,19 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 64px;
-  background-image: url(../img/testing-5.png), url(../img/testing-6.png);
+  background-image: url(../img/testing-6.png), url(../img/testing-5.png);
   background-repeat: no-repeat;
-  background-position: right 106px, left 478px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-left: 96px;
-  padding-right: 96px;
+  background-position: left 433px, right 61px;
+  padding-top: calc(60px + 60 * (100vw - 320px) / 1046);
+  padding-bottom: calc(60px + 60 * (100vw - 320px) / 1046);
+  padding-left: calc(32px + 64 * (100vw - 320px) / 1046);
+  padding-right: calc(32px + 64 * (100vw - 320px) / 1046);
 }
-@media (max-width: 1366px) {
-  .testing__column {
-    background-position: right 106px, left calc(560px + -82 * (100vw - 900px) / 466);
-  }
-}
-@media (max-width: 899px) {
-  .testing__column {
-    padding-top: calc(60px + 60 * (100vw - 320px) / 580);
-    padding-bottom: calc(60px + 60 * (100vw - 320px) / 580);
-    padding-left: calc(32px + 64 * (100vw - 320px) / 580);
-    padding-right: calc(32px + 64 * (100vw - 320px) / 580);
-    background-size: 100%;
-  }
-}
-@media (max-width: 899px) {
-  .testing__column {
-    background-position: right calc(210px + -316 * (100vw - 708px) / 658), left calc(510px + 50 * (100vw - 708px) / 658);
-  }
-}
-@media (max-width: 707px) {
-  .testing__column {
-    background-position: right calc(240px + -30 * (100vw - 586px) / 780), left calc(510px + 0 * (100vw - 586px) / 780);
-  }
-}
-@media (max-width: 585px) {
-  .testing__column {
-    background-position: right calc(390px + -150 * (100vw - 500px) / 866), left 840px;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 819px) {
   .testing__column {
     background-image: url(../img/testing-6.png), url(../img/testing-5.png), url(../img/testing-6.png), url(../img/testing-5.png);
-    background-position: left -53px, right calc(400px + -294 * (100vw - 320px) / 1046), left calc(820px + 20 * (100vw - 320px) / 1046), right 1350px;
+    background-position: left -70px, right 480px, left 1010px, right 1560px;
+    background-size: 80%, 80%;
   }
 }
 
@@ -173,14 +145,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: calc(50px + 50 * (100vw - 320px) / 1046);
 }
-@media (max-width: 585px) {
+@media (max-width: 819px) {
   .testing__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -189,7 +162,7 @@ img {
             justify-content: center;
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 819px) {
   .testing__row .testing__text {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -206,14 +179,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 271px;
-          flex: 1 0 271px;
+      -ms-flex: 1 0 220px;
+          flex: 1 0 220px;
   max-width: 547px;
-}
-@media (max-width: 834px) {
-  .testing__text {
-    max-width: 427px;
-  }
 }
 .testing__text h2 {
   font-size: 24px;
@@ -222,13 +190,10 @@ img {
   line-height: normal;
   margin: 0px 0px 16px 0px;
 }
-
-.testing__text-left {
-  margin-right: 10px;
-}
-
-.testing__text-right {
-  margin-left: 10px;
+@media (max-width: 819px) {
+  .testing__text h2 {
+    text-align: center;
+  }
 }
 
 .testing__text-white {
@@ -245,11 +210,12 @@ img {
           flex-direction: column;
   gap: 32px;
 }
-@media (max-width: 585px) {
+@media (max-width: 819px) {
   .testing__par-learn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: justify;
   }
 }
 
@@ -285,11 +251,11 @@ img {
   content: url("../img/svg/testing-7.svg");
 }
 
-@media (max-width: 585px) {
-  .testing__text-black .testing__text-white {
+@media (max-width: 819px) {
+  .testing__text-white {
     color: #221E29;
   }
-  .testing__text-black h2 {
+  h2 {
     color: #221E29;
   }
 }
