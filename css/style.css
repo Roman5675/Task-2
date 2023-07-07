@@ -136,8 +136,8 @@ img {
 @media (max-width: 819px) {
   .testing__column {
     background-image: url(../img/testing-6.png), url(../img/testing-5.png), url(../img/testing-6.png), url(../img/testing-5.png);
-    background-position: left -70px, right 480px, left 1010px, right 1560px;
-    background-size: 80%, 80%;
+    background-position: left -70px, right 470px, left 970px, right 1470px;
+    background-size: 50%, 50%;
   }
 }
 
@@ -151,7 +151,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: calc(50px + 50 * (100vw - 320px) / 1046);
+  gap: calc(10px + 90 * (100vw - 320px) / 1046);
 }
 @media (max-width: 819px) {
   .testing__row {
