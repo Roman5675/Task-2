@@ -136,7 +136,7 @@ img {
 @media (max-width: 819px) {
   .testing__column {
     background-image: url(../img/testing-6.png), url(../img/testing-5.png), url(../img/testing-6.png), url(../img/testing-5.png);
-    background-position: left -70px, right 470px, left 970px, right 1470px;
+    background-position: left 0px, right 470px, left 970px, right 1470px;
     background-size: 50%, 50%;
   }
 }
